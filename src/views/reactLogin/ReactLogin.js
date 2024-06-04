@@ -53,7 +53,12 @@ const LoginReact = () => {
        LoginClick();
       e.preventDefault();
     }
-  };
+  }; 
+
+  const ResetClick =()=>{
+    setUserName();
+    setPassword();
+  }
 
 
   return (
@@ -70,7 +75,7 @@ const LoginReact = () => {
                
                 <CCard style={{ marginTop: "200px"}}>
                  <CCardHeader>
-                 <h3 style={{ marginTop: "15px" }}>LoginForm</h3>
+                 <h3 style={{ marginTop: "15px" }}>LoginForm 1234</h3>
                 </CCardHeader>
                  <CCardBody>  
                  <SuccessError success={success} error={error} />    
@@ -96,6 +101,9 @@ const LoginReact = () => {
                     <CButton className="create-btn" 
                     onClick={LoginClick}
                     style={{width:"76px"}}>Login</CButton>
+                       <CButton className="create-btn" 
+                    onClick={ResetClick}
+                    style={{width:"76px"}}>Reset</CButton>
                    </CRow>
                 </CCardBody>
                 </CCard>
